@@ -4,9 +4,9 @@ Pod::Spec.new do |s|
           #2.
           s.version            = "1.0.0"
           #3.  
-          s.summary         = "Sort description of 'AugustaFramework' framework"
+          s.summary         = "This is a logger framework"
           #4.
-          s.homepage        = ""
+          s.homepage        = "www.augustahitech.com"
           #5.
           s.license              = "MIT"
           #6.
