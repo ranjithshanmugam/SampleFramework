@@ -23,7 +23,8 @@ public class AUWebService{
     
     public class func callServiceAndGetData(url: String,
                                type: AUWebServiceType,
-                               userData: [String: Any],
+                               userData: [String: Any]?,
+                               headers: [String:String]?,
                                successBlock: @escaping kModelSuccessBlock,
                                failureBlock : @escaping kModelErrorBlock){
         
@@ -41,7 +42,7 @@ public class AUWebService{
             httpMethod = .post
         }
         
-        Alamofire.request(url, method: httpMethod!, parameters: userData, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
+        Alamofire.request(url, method: httpMethod!, parameters: userData, encoding: JSONEncoding.default, headers: headers).responseJSON { (response:DataResponse<Any>) in
             
             switch(response.result) {
             case .success(_):
