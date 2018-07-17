@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4175AFE4F3ED9663DE4903A6 /* Pods_AugustaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A000661221375EA10FBC7E23 /* Pods_AugustaFramework.framework */; };
+		974EE27E20FDB64D007163AF /* AUWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974EE27D20FDB64D007163AF /* AUWebService.swift */; };
 		979984DE20FC9F2E00D8E9E3 /* AugustaFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 979984DC20FC9F2E00D8E9E3 /* AugustaFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		979984E520FC9F3F00D8E9E3 /* AULogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979984E420FC9F3F00D8E9E3 /* AULogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7746011991EE7596CB0B0FB0 /* Pods-AugustaFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugustaFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-AugustaFramework/Pods-AugustaFramework.release.xcconfig"; sourceTree = "<group>"; };
+		974EE27D20FDB64D007163AF /* AUWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUWebService.swift; sourceTree = "<group>"; };
 		979984D920FC9F2E00D8E9E3 /* AugustaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AugustaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		979984DC20FC9F2E00D8E9E3 /* AugustaFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AugustaFramework.h; sourceTree = "<group>"; };
 		979984DD20FC9F2E00D8E9E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		979984E420FC9F3F00D8E9E3 /* AULogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AULogger.swift; sourceTree = "<group>"; };
+		A000661221375EA10FBC7E23 /* Pods_AugustaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AugustaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3D2F47F17E344912AD229A /* Pods-AugustaFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugustaFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AugustaFramework/Pods-AugustaFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,17 +29,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4175AFE4F3ED9663DE4903A6 /* Pods_AugustaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5CACE996BE5022E5297536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A000661221375EA10FBC7E23 /* Pods_AugustaFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		979984CF20FC9F2E00D8E9E3 = {
 			isa = PBXGroup;
 			children = (
 				979984DB20FC9F2E00D8E9E3 /* AugustaFramework */,
 				979984DA20FC9F2E00D8E9E3 /* Products */,
+				D68EDEF2DBF1F491D429052B /* Pods */,
+				4F5CACE996BE5022E5297536 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,9 +67,19 @@
 			children = (
 				979984DC20FC9F2E00D8E9E3 /* AugustaFramework.h */,
 				979984E420FC9F3F00D8E9E3 /* AULogger.swift */,
+				974EE27D20FDB64D007163AF /* AUWebService.swift */,
 				979984DD20FC9F2E00D8E9E3 /* Info.plist */,
 			);
 			path = AugustaFramework;
+			sourceTree = "<group>";
+		};
+		D68EDEF2DBF1F491D429052B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA3D2F47F17E344912AD229A /* Pods-AugustaFramework.debug.xcconfig */,
+				7746011991EE7596CB0B0FB0 /* Pods-AugustaFramework.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +100,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 979984E120FC9F2E00D8E9E3 /* Build configuration list for PBXNativeTarget "AugustaFramework" */;
 			buildPhases = (
+				29E7B3147C4EB8FB9C8BF5B3 /* [CP] Check Pods Manifest.lock */,
 				979984D420FC9F2E00D8E9E3 /* Sources */,
 				979984D520FC9F2E00D8E9E3 /* Frameworks */,
 				979984D620FC9F2E00D8E9E3 /* Headers */,
@@ -129,11 +157,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29E7B3147C4EB8FB9C8BF5B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AugustaFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		979984D420FC9F2E00D8E9E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974EE27E20FDB64D007163AF /* AUWebService.swift in Sources */,
 				979984E520FC9F3F00D8E9E3 /* AULogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +313,7 @@
 		};
 		979984E220FC9F2E00D8E9E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3D2F47F17E344912AD229A /* Pods-AugustaFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -289,6 +340,7 @@
 		};
 		979984E320FC9F2E00D8E9E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7746011991EE7596CB0B0FB0 /* Pods-AugustaFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
