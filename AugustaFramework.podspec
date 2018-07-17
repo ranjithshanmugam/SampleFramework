@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
           s.source              = { :git => "https://github.com/ranjithshanmugam/SampleFramework.git", :tag => "1.0.0" }
           #9.
           s.source_files     = "AugustaFramework", "AugustaFramework/**/*.{h,m,swift}"
+
+s.dependency 'Alamofire', "= #{4.0}"
     end
