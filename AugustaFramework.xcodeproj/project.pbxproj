@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4175AFE4F3ED9663DE4903A6 /* Pods_AugustaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A000661221375EA10FBC7E23 /* Pods_AugustaFramework.framework */; };
 		974EE27E20FDB64D007163AF /* AUWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974EE27D20FDB64D007163AF /* AUWebService.swift */; };
+		974EE28020FDB833007163AF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974EE27F20FDB833007163AF /* Alamofire.framework */; };
 		979984DE20FC9F2E00D8E9E3 /* AugustaFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 979984DC20FC9F2E00D8E9E3 /* AugustaFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		979984E520FC9F3F00D8E9E3 /* AULogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979984E420FC9F3F00D8E9E3 /* AULogger.swift */; };
 /* End PBXBuildFile section */
@@ -16,6 +17,7 @@
 /* Begin PBXFileReference section */
 		7746011991EE7596CB0B0FB0 /* Pods-AugustaFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AugustaFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-AugustaFramework/Pods-AugustaFramework.release.xcconfig"; sourceTree = "<group>"; };
 		974EE27D20FDB64D007163AF /* AUWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUWebService.swift; sourceTree = "<group>"; };
+		974EE27F20FDB833007163AF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		979984D920FC9F2E00D8E9E3 /* AugustaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AugustaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		979984DC20FC9F2E00D8E9E3 /* AugustaFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AugustaFramework.h; sourceTree = "<group>"; };
 		979984DD20FC9F2E00D8E9E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974EE28020FDB833007163AF /* Alamofire.framework in Frameworks */,
 				4175AFE4F3ED9663DE4903A6 /* Pods_AugustaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +42,7 @@
 		4F5CACE996BE5022E5297536 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				974EE27F20FDB833007163AF /* Alamofire.framework */,
 				A000661221375EA10FBC7E23 /* Pods_AugustaFramework.framework */,
 			);
 			name = Frameworks;
